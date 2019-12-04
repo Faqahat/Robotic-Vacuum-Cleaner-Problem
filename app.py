@@ -1,6 +1,7 @@
 import numpy as np
-s = '445699209991863034'
-#s = '445621997591863034'
+f = open("input.txt", "r")
+cases = f.readline()
+s = f.readline()
 s = np.array(list(s), dtype=np.uint8)
 x = s[2:].reshape(s[0],-1)
 size = s[0]
