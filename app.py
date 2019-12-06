@@ -8,8 +8,8 @@ size = s[0]
 cords = {
     "sum" : 0
 }
-for i in range(0, len(s)):
-    if i > 0:
+for i in range(0, len(s)-2):
+    
         for j in range(0, len(s)):
             sum = 0
             if i + 1  <  size and i  <  size and  j  <  size and j + 1  <  size:
@@ -23,7 +23,7 @@ for i in range(0, len(s)):
                         "d" : j+1,
                         "sum" : sum
                     }
-print "(", cords["c"] , "," , cords["b"], ")", "(", cords["d"] , "," , cords["b"] , ") ","(", cords["d"] , "," , cords["a"] , ")" ,"(", cords["c"] , "," , cords["a"] , ")" , cords["sum"]
+print ("(", cords["c"] , "," , cords["b"], ")", "(", cords["d"] , "," , cords["b"] , ") ","(", cords["d"] , "," , cords["a"] , ")" ,"(", cords["c"] , "," , cords["a"] , ")" , cords["sum"])
 
  
                 
